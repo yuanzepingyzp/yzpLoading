@@ -33,6 +33,10 @@ function yzpLoading(id,speed){
 		context.lineWidth=5;
 		context.strokeStyle=this.color;
 		context.stroke();
+		context.beginPath();
+		context.font="bold 10px 微软雅黑";
+		context.fillStyle='white';
+		context.fillText("加载中",this.width/2-16,this.height/2+5);
 	};
 	this.loading=function(){
 		this.clear();
